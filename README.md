@@ -1,2 +1,2 @@
 # ai-target-project
-Target repository for automated development by the AI Developer Framework.
+This is a Python project for ai-target-project.
