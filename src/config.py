@@ -1,5 +1,6 @@
 import os
 
 class Config:
-    def __init__(self):
-        self.debug = os.environ.get("DEBUG", False)
+    DEBUG = False
+    TESTING = False
+    SECRET_KEY = os.environ.get('SECRET_KEY')

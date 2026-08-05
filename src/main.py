@@ -1,5 +1,7 @@
-def main():
-    pass
+import logging
 
-if __name__ == "__main__":
+def main():
+    logging.info('Main function executed')
+
+if __name__ == '__main__':
     main()

@@ -1,1 +1,1 @@
-# Initialize the src package
+# Initialize the package
