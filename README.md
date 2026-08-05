@@ -1,2 +1,4 @@
-# ai-target-project
-This is a Python project for ai-target-project.
+# Project description
+Project Name
+================
+Description of the project.

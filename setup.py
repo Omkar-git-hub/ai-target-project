@@ -1,10 +1,10 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
-    name='ai-target-project',
-    version='1.0.0',
-    packages=find_packages(),
+    name='project',
+    version='1.0',
+    packages=['src', 'src.utils', 'tests'],
     install_requires=[],
-    author='Your Name',
-    author_email='your@email.com'
+    author='Author',
+    author_email='author@example.com'
 )
