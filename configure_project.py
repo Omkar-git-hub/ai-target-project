@@ -1,8 +1,10 @@
-import subprocess
-import sys
+"""
+Configure the project.
+"""
+import os
+from config import config
 
-def install_requirements():
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
-
-if __name__ == "__main__":
-    install_requirements()
+def configure():
+    """Configure the project."""
+    env = os.environ.get('ENV', 'development')
+    return config.get(env, config['default'])()

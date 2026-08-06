@@ -1,18 +1,42 @@
-from typing import Dict
+"""
+Configuration module for the project.
+"""
+import os
+from enum import Enum
+
+class Environment(Enum):
+    """Environment types."""
+    DEVELOPMENT = 'development'
+    PRODUCTION = 'production'
+    TESTING = 'testing'
 
 class Config:
-    def __init__(self, env: str):
-        self.env = env
-        self.configs = {
-            'dev': {
-                'database_url': 'sqlite:///dev.db',
-                'debug': True
-            },
-            'prod': {
-                'database_url': 'postgresql://user:password@host:port/dbname',
-                'debug': False
-            }
-        }
+    """Base configuration class."""
+    DEBUG = False
+    TESTING = False
+    ENV = Environment.PRODUCTION
 
-    def get_config(self) -> Dict:
-        return self.configs.get(self.env)
+class DevelopmentConfig(Config):
+    """Development configuration class."""
+    DEBUG = True
+    ENV = Environment.DEVELOPMENT
+
+class TestingConfig(Config):
+    """Testing configuration class."""
+    TESTING = True
+    ENV = Environment.TESTING
+
+class ProductionConfig(Config):
+    """Production configuration class."""
+    ENV = Environment.PRODUCTION
+
+config = {
+    'development': DevelopmentConfig,
+    'testing': TestingConfig,
+    'production': ProductionConfig,
+    'default': DevelopmentConfig
+}
+
+def get_config(env):
+    """Get configuration based on environment."""
+    return config.get(env, config['default'])()
