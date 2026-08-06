@@ -1,5 +1,5 @@
-import pytest
+import pytest 
 
 @pytest.fixture
-def fixture():
-    return "fixture"
+def config():
+    return Config()
