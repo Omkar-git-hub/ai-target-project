@@ -1,3 +1,1 @@
-"""
-Package subpackage initialization.
-"""
+# Initialize the subpackage
