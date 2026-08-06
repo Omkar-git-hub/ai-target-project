@@ -1,3 +1,3 @@
 """
-Package subpackage module.
+Package subpackage initialization.
 """

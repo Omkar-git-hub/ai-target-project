@@ -1,3 +1,3 @@
 """
-Package subpackage utils module.
+Utils module initialization.
 """

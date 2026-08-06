@@ -1,3 +1,3 @@
 """
-Package subpackage services module.
+Services module initialization.
 """
