@@ -1,1 +1,3 @@
-# This is an empty repositories package initialization file.
+"""
+Package subpackage repositories initialization.
+"""

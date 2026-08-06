@@ -1,1 +1,3 @@
-# This is an empty package initialization file.
+"""
+Package subpackage initialization.
+"""
