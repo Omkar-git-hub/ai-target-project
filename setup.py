@@ -1,8 +1,10 @@
 from setuptools import setup
 
 setup(
-    name='ai-target-project',
+    name='package',
     version='1.0',
-    packages=['ai_target_project'],
-    install_requires=['pytest']
+    packages=['package'],
+    install_requires=[
+        'pytest'
+    ]
 )
