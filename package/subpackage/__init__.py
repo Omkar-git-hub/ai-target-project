@@ -1,1 +1,3 @@
-# Initialize the subpackage
+"""
+Package subpackage module.
+"""

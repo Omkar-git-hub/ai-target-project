@@ -1,1 +1,3 @@
-# Initialize the services module
+"""
+Package subpackage services module.
+"""

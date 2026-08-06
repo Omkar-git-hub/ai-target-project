@@ -1,1 +1,3 @@
-# Initialize the repositories module
+"""
+Package subpackage repositories module.
+"""
