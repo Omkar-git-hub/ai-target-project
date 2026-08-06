@@ -1,10 +1,8 @@
-import setuptools
+from setuptools import setup
 
-setuptools.setup(
-    name='project',
+setup(
+    name='ai-target-project',
     version='1.0',
-    packages=setuptools.find_packages(),
-    install_requires=[
-        'requests'
-    ]
+    packages=['ai_target_project'],
+    install_requires=['pytest']
 )
