@@ -1,1 +1,1 @@
-# Initialize the package
+from .package import Package

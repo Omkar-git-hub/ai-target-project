@@ -1,5 +1,10 @@
-def main():
-    pass
+import pytest
 
-if __name__ == "__main__":
-    main()
+def add_numbers(a, b):
+    return a + b
+
+def test_add_numbers():
+    assert add_numbers(1, 2) == 3
+
+if __name__ == '__main__':
+    pytest.main([__file__])

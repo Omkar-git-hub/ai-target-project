@@ -1,5 +1,10 @@
+"""
+Pytest configuration.
+"""
 import pytest
+from config import config
 
 @pytest.fixture
-def fixture():
-    return "fixture"
+def config():
+    """Get configuration."""
+    return config.get('testing')()

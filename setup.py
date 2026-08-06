@@ -1,10 +1,10 @@
-import setuptools
+from setuptools import setup
 
-setuptools.setup(
-    name='project',
+setup(
+    name='package',
     version='1.0',
-    packages=setuptools.find_packages(),
+    packages=['package'],
     install_requires=[
-        'requests'
+        'pytest'
     ]
 )

@@ -2,13 +2,12 @@
 Application configuration.
 """
 
-import os
 from constants import *
 
 class Config:
     def __init__(self):
         self.app_name = APP_NAME
-        self.version = VERSION
+        self.app_version = APP_VERSION
         self.api_url = API_URL
         self.api_key = API_KEY
         self.db_host = DB_HOST

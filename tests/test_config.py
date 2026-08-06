@@ -1,4 +1,6 @@
 import pytest
+from src.config import Config
 
 def test_config():
-    assert True
+    config = Config()
+    assert config is not None
