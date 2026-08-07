@@ -1,6 +1,5 @@
-import pytest
-from src.config import Config
+from ai_target_project.config import config
 
 def test_config():
-    config = Config()
-    assert config is not None
+    assert config['development'].DEBUG
+    assert not config['production'].DEBUG

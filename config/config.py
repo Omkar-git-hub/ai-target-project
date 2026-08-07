@@ -1,34 +1,36 @@
 """
 Configuration module for the project.
-"""
-import os
-from enum import Enum
 
-class Environment(Enum):
-    """Environment types."""
-    DEVELOPMENT = 'development'
-    PRODUCTION = 'production'
-    TESTING = 'testing'
+This module contains all configuration-related settings and constants.
+"""
+
+import os
 
 class Config:
-    """Base configuration class."""
+    """
+    Base configuration class.
+    """
     DEBUG = False
     TESTING = False
-    ENV = Environment.PRODUCTION
+    SECRET_KEY = os.environ.get('SECRET_KEY', 'default_secret_key')
 
 class DevelopmentConfig(Config):
-    """Development configuration class."""
+    """
+    Development configuration class.
+    """
     DEBUG = True
-    ENV = Environment.DEVELOPMENT
 
 class TestingConfig(Config):
-    """Testing configuration class."""
+    """
+    Testing configuration class.
+    """
     TESTING = True
-    ENV = Environment.TESTING
 
 class ProductionConfig(Config):
-    """Production configuration class."""
-    ENV = Environment.PRODUCTION
+    """
+    Production configuration class.
+    """
+    pass
 
 config = {
     'development': DevelopmentConfig,
@@ -36,7 +38,3 @@ config = {
     'production': ProductionConfig,
     'default': DevelopmentConfig
 }
-
-def get_config(env):
-    """Get configuration based on environment."""
-    return config.get(env, config['default'])()

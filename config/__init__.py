@@ -1,1 +1,1 @@
-# Empty init file to mark config as a package
+# Empty file, used for package initialization

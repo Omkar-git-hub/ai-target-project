@@ -1,12 +1,12 @@
 """
-Enums for the project configuration.
+Enum module for configuration.
 """
 from enum import Enum
 
-class LogLevel(Enum):
-    """Log levels."""
-    DEBUG = 'debug'
-    INFO = 'info'
-    WARNING = 'warning'
-    ERROR = 'error'
-    CRITICAL = 'critical'
+class Environment(Enum):
+    """
+    Environment enum.
+    """
+    DEVELOPMENT = 'development'
+    TESTING = 'testing'
+    PRODUCTION = 'production'
