@@ -4,9 +4,10 @@
         "Create package structure",
         "Configure project",
         "Add README",
-        "Create config module"
+        "Create config module",
+        "Add application constants"
     ],
     "completed_commits": 0,
     "last_commit": "",
-    "project_progress": 4
+    "project_progress": 5
 }

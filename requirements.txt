@@ -1,1 +1,1 @@
-# No changes needed
+# No changes needed, constants do not require any additional dependencies.
