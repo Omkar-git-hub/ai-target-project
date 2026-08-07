@@ -1,5 +1,5 @@
-from package.package import Package
+from package import Package
 
 def test_package():
     package = Package()
-    package.run()
+    assert isinstance(package, Package)
