@@ -12,3 +12,5 @@ To install the project, follow these steps:
 To run the project, navigate to the project directory and execute the `main.py` file using `python main.py`. You can also run the tests using `pytest` to ensure the project is working as expected.
 
 Note: This README file provides a basic overview of the project. As the project evolves, this file will be updated to reflect the changes and provide more detailed information.
+
+##EOD
